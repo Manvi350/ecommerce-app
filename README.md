@@ -5,8 +5,6 @@ A modern full-stack E-Commerce web application built with **React (Vite)**, **Fa
 ## 🌐 Live Demo
 
 * **Live Website:** https://ecommerce-app-zeta-drab.vercel.app
-* **Backend API:** https://ecommerce-backend-6mko.onrender.com
-* **API Documentation:** https://ecommerce-backend-6mko.onrender.com/docs
 
 > **Note:** The backend is hosted on Render's free tier, so the first request may take **30–60 seconds** if the server is waking up.
 
