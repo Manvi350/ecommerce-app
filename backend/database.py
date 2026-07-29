@@ -1,4 +1,10 @@
+import os
+from dotenv import load_dotenv
 from pymongo import MongoClient
 
-client=MongoClient("mongodb://localhost:27017")
-db=client["ecommerce_db"]
+load_dotenv()
+
+MONGO_URI = os.getenv("MONGO_URI")
+
+client = MongoClient(MONGO_URI)
+db = client["ecommerce_db"]
