@@ -10,7 +10,7 @@ export default function LoginModal({ onClose, onLoginSuccess }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://127.0.0.1:8000/auth/login", {
+      const res = await axios.post("https://ecommerce-backend-6mko.onrender.com/auth/login", {
         email,
         password,
       },

@@ -15,7 +15,7 @@ export default function LoginPage({ onLoginFail, onLoginSuccess }) {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/auth/login",
+        "https://ecommerce-backend-6mko.onrender.com/auth/login",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );

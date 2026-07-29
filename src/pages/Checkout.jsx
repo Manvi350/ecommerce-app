@@ -32,7 +32,7 @@ const Checkout = () => {
     };
     try {
       const token = localStorage.getItem("token");
-      await axios.post("http://127.0.0.1:8000/checkout", dataToSend, {
+      await axios.post("https://ecommerce-backend-6mko.onrender.com/checkout", dataToSend, {
         headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }
       });
       alert("Order placed successfully");

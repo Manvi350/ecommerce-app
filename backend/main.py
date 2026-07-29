@@ -6,8 +6,8 @@ app = FastAPI()
 
 # Allow frontend (React) to talk with backend
 origins = [
-    "http://localhost:5173",   # React dev server
-    "http://localhost:3000",   # Agar tum CRA use kar rahi ho
+    "http://localhost:5173",  
+    "http://ecommerce-app-zeta-drab.vercel.app",   
 ]
 
 app.add_middleware(

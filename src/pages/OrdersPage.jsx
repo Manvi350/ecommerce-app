@@ -25,7 +25,7 @@ const OrdersPage = () => {
       try {
         const token = localStorage.getItem("token");
         if (!token) { setOrders([]); setLoading(false); return; }
-        const res = await axios.get("http://127.0.0.1:8000/orders", {
+        const res = await axios.get("https://ecommerce-backend-6mko.onrender.com/orders", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setOrders(res.data || []);

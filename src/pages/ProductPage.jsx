@@ -31,7 +31,7 @@ const ProductPage = () => {
   const [qty, setQty] = useState(1);
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/products/${id}`)
+    axios.get(`https://ecommerce-backend-6mko.onrender.com/products/${id}`)
       .then((res) => { setProduct(res.data); setLoading(false); })
       .catch((err) => { console.error("Error fetching product", err); setLoading(false); });
   }, [id]);

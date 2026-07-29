@@ -40,7 +40,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/products")
+        axios.get("https://ecommerce-backend-6mko.onrender.com/products")
             .then(res => { setProducts(res.data); setLoading(false); })
             .catch(err => { console.error("Error fetching products:", err); setLoading(false); });
     }, []);

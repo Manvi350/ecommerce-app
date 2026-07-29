@@ -5,7 +5,7 @@ export default function ProductList() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/products")
+    axios.get("https://ecommerce-backend-6mko.onrender.com/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.error("Error fetching products:", err));
   }, []);

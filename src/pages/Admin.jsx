@@ -28,7 +28,7 @@ const Admin = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://127.0.0.1:8000/products", formData);
+      await axios.post("https://ecommerce-backend-6mko.onrender.com/products", formData);
       fetchProducts();
       showToast("success", "Product uploaded successfully!");
       setFormData({ name: "", price: "", image: "", description: "", category: "" });
@@ -43,7 +43,7 @@ const Admin = () => {
 
   const fetchProducts = async () => {
     try {
-        const res = await axios.get("http://127.0.0.1:8000/products");
+        const res = await axios.get("https://ecommerce-backend-6mko.onrender.com/products");
         setProducts(res.data);
     } catch (err) {
         console.error(err);
@@ -56,7 +56,7 @@ const Admin = () => {
 
     const handleDelete = async (id) => {
     try {
-        await axios.delete(`http://127.0.0.1:8000/products/${id}`);
+        await axios.delete(`https://ecommerce-backend-6mko.onrender.com/products/${id}`);
 
         setProducts(products.filter((p) => p._id !== id));
 
